@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 			}
 
 			if (result.errors.length > 0) {
-				next(result.errors.join('\n'));
+				next(el.src[0] + '\n' + result.errors.join('\n'));
 				return;
 			}
 
